@@ -129,6 +129,7 @@ namespace adyen_dotnet_in_person_payments_loyalty_example.Controllers
                     }); 
                 }
                 
+                _logger.LogInformation("AdditionalData: {AdditionalData}", JsonConvert.SerializeObject(json.AdditionalData));
                 // Note that if you specified a TokenRequestedType of Customer in the request, the card alias is also provided in cardAcquisitionResponse.PaymentInstrumentData.CardData.PaymentToken.TokenValue.
                 string alias = json.AdditionalData.Alias;
                 

@@ -43,13 +43,13 @@ namespace adyen_dotnet_in_person_payments_loyalty_example.Repositories
             Pizzas = new List<PizzaModel>();
             for (int i = 0; i < PizzaNames.Length; i++)
             {
-                decimal amount = Math.Round((11 * (i + 1)) + 0.99M, 2); // EUR 11.99, 22.99, 33.99 etc...
+                decimal amount = Math.Round((11 * (i + 1)) + 0.99M, 2); // NOK 11.99, 22.99, 33.99 etc...
                 Pizzas.Add(new PizzaModel()
                 {
                     PizzaName = PizzaNames[i],
                     Amount = amount,
                     OriginalAmount = amount,
-                    Currency = "EUR"
+                    Currency = "NOK"
                 });
             }
         }

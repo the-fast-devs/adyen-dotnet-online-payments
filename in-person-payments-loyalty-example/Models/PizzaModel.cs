@@ -3,7 +3,7 @@
     public class PizzaModel
     {
         /// <summary>
-        /// Currency used for the <see cref="Amount"/> (e.g. "EUR", "USD).
+        /// Currency used for the <see cref="Amount"/> (e.g. "NOK", "USD).
         /// </summary>
         public string Currency { get; init; }
 
