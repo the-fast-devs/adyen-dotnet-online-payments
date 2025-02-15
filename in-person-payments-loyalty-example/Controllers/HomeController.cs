@@ -23,7 +23,6 @@ namespace adyen_dotnet_in_person_payments_loyalty_example.Controllers
 
         public HomeController(IOptions<AdyenOptions> optionsAccessor, IPizzaRepository pizzaRepository, IShopperRepository shopperRepository, IPosTransactionStatusService posTransactionStatusService)
         {
-            Console.WriteLine("ADYEN_HMAC_KEY: " + optionsAccessor.Value.ADYEN_HMAC_KEY);
             _poiId = optionsAccessor.Value.ADYEN_POS_POI_ID;
             _saleId = optionsAccessor.Value.ADYEN_POS_SALE_ID;
             _pizzaRepository = pizzaRepository;
